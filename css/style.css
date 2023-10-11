@@ -8,10 +8,35 @@ body {
     background-color: #4e54c8de;
 }
 
-.container {
+/* .container {
     width: 500px;
     margin: 100px auto;
+} */
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
 }
+
+@media (min-width : 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+@media (min-width : 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+@media (min-width : 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
 
 .title-todo {
     display: flex;
@@ -52,7 +77,13 @@ body {
     margin-left: 10px;
     cursor: pointer;
 }
-
+@media (max-width : 345px){
+    .add {
+        padding: 11px 5px;
+        margin-left: 8px;
+        font-size: 10px;
+    }
+}
 .tasks {
     background-color: #eee;
     margin-top: 20px;
@@ -93,11 +124,12 @@ body {
     border-radius: 4px;
     cursor: pointer;
 }
+
 .delete {
     display: block;
     background-color: #f44336;
     border: none;
-    color:  white;
+    color: white;
     padding: 10px 15px;
     border-radius: 6px;
     margin: 20px auto;
