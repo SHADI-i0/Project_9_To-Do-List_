@@ -79,9 +79,8 @@ body {
 }
 @media (max-width : 345px){
     .add {
-        padding: 11px 5px;
         margin-left: 8px;
-        font-size: 10px;
+        font-size: 13px;
     }
 }
 .tasks {
