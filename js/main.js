@@ -17,8 +17,8 @@ submit.addEventListener("click", function () {
 // delete Task All
 deleteAll.addEventListener("click", function () {
     tasksDiv.innerHTML = "";
-    window.localStorage.clear();
     arrayOfTasks = [];
+    window.localStorage.clear();
 });
 
 // Click On task Element
